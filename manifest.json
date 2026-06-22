@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Validador de URLs com IA",
+  "version": "1.0",
+  "description": "Verifica a confiabilidade do site atual usando Inteligência Artificial.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "validador-ia@seusite.com"
+    }
+  }
+}

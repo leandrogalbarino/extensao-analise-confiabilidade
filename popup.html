@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">🛡️</div>
+        <h2>Validador de URL</h2>
+      </header>
+
+      <main>
+        <p class="label">Site atual:</p>
+        <div id="site-url" class="url-display">Carregando...</div>
+
+        <button id="analisar-btn" class="primary-btn">Analisar Segurança</button>
+
+        <div id="result-card" class="card hidden">
+          <div id="score" class="score-circle">--</div>
+          <p id="status" class="status-text"></p>
+          <small id="camada-info" class="layer-text"></small>
+        </div>
+      </main>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
