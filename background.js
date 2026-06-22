@@ -1,3 +1,5 @@
+importScripts('config.js');
+const API_KEY = CONFIG.GEMINI_API_KEY;
 // Listas para as camadas 1 e 2
 const ALLOWLIST = [
   // Big Techs e Infraestrutura
@@ -147,9 +149,8 @@ async function executarAnaliseEmCamadas(url) {
   }
 }
 
-const key = 'Digite a key aqui';
 async function consultarIAGemini(url) {
-  const apiKey = key; 
+  const apiKey = API_KEY;
   const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
 
   const promptTexto = `Aja como um Analista de Segurança da Informação e especialista em OSINT. 
